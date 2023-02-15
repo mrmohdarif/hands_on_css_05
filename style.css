@@ -1,0 +1,132 @@
+.main{
+    width: 800px;
+    margin: 0 auto;
+}
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: #94d82d;
+    border: 1px solid black;
+    /* transition: transform 1s; */
+    animation-name: boxa;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    transform: skewY(20deg);
+    animation-direction:alternate; 
+}
+a{
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+}
+
+/* .div1:hover{
+     transform-origin: bottom;
+     transform: rotate(20px);
+    cursor: pointer;
+} */
+.list1,.list2,.list3,.list4{
+    display: flex;
+    justify-content: center;
+    justify-content:space-around;
+    margin-top: 30px;
+    margin-bottom: 40px
+    
+}
+.div2{
+    width: 100px;
+    height: 100px;
+    background-color: #712dd8;
+    animation-name: boxb;
+    transform: skewX(20deg);
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+.div3{
+    width: 100px;
+    height: 100px;
+    background-color: #d82d99;
+    animation-name:boxc;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* transform: translate(0deg); */
+    /* animation-direction: alternate; */
+}
+.div4{
+    width: 100px;
+    height: 100px;
+    background-color: #e80e0e;
+}
+.divA{
+    animation-name: boxd;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+}
+.divB{
+    animation-name: boxe;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.divC{
+    animation-name:boxf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes boxa {
+  from{
+    transform: skewY(20deg);
+  }
+  to{
+    transform: skewY(-30deg);
+    
+  }
+}
+@keyframes boxb {
+    from{
+      transform: skewX(20deg);
+    }
+    to{
+transform: skewX(-20deg);
+    }
+}
+
+@keyframes boxc {
+    from{
+       transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes boxd {
+    from{
+       transform: rotateX(0deg);
+        
+    }
+    to{
+        transform: rotateX(80deg);
+    }
+}
+@keyframes boxe {
+    from{
+     transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(80deg);
+    }
+    
+}
+@keyframes boxf {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
